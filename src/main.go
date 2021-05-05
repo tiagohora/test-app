@@ -29,6 +29,7 @@ func main()  {
 // TODO: must be able to receive n middlewares
 func mapRoute(verb string, route string, handle HFunc) {
 	routerFunctions[verb](route, func (c *gin.Context) {
+		// Isso aqui foi feito pra não acoplar a aplicação ao framework (GIN)
 		handle(context.Context(c), c.Writer)
 	})
 }
