@@ -1,13 +1,13 @@
-package xratedata
+package data
 
 import (
 	"fmt"
-	"github.com/tiagohora/test-app/src/subject/xrate/xratedomain"
+	"github.com/tiagohora/test-app/src/subject/xrate/domain"
 )
 
 type exchangeRateRepository struct {}
 
-func New() xratedomain.RepositoryInterface {
+func New() domain.RepositoryInterface {
 	return &exchangeRateRepository{}
 }
 

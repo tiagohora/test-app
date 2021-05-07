@@ -5,9 +5,8 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/tiagohora/test-app/src/infra/dummy"
-	"github.com/tiagohora/test-app/src/subject/xrate/xratedelivery"
+	xratedelivery "github.com/tiagohora/test-app/src/subject/xrate/delivery"
 )
-
 var (
 	router = gin.New()
 	routerFunctions = map[string]func(r string, h ...gin.HandlerFunc) gin.IRoutes{

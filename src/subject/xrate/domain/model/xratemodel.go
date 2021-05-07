@@ -1,4 +1,4 @@
-package xratemodel
+package model
 
 type ExchangeRate struct {
 
